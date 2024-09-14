@@ -29,7 +29,12 @@
 
     <script>
         function changeColor() {
-            document.body.style.backgroundColor = "lightgreen";
+            const currentColor = document.body.style.backgroundColor;
+            if (currentColor === "lightgreen") {
+                document.body.style.backgroundColor = "lightblue";
+            } else {
+                document.body.style.backgroundColor = "lightgreen";
+            }
         }
     </script>
 </body>
